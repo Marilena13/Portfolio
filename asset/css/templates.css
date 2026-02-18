@@ -1,135 +1,134 @@
-.templates {
-  padding: 100px 0;
-  background: #f5f7fa;
-}
-
-.template-card {
-  background: white;
-  padding: 40px;
-  border-radius: 16px;
-  margin-bottom: 40px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+/* ===== TEMPLATES PAGE ===== */
+.templates .template-card {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  transition: 0.3s;
+  flex-wrap: wrap;
+  background: rgba(255,255,255,0.03);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.05);
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
-.template-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+.templates .template-card:hover {
+  transform: translateY(-6px);
+  border: 1px solid rgba(203,108,230,0.3);
+  box-shadow: 0 15px 40px rgba(203,108,230,0.15);
 }
 
-.template-info {
-  flex: 2;
-}
-
-.template-info h3 {
-  margin-bottom: 15px;
-  color: #0d1b2a;
-  font-size: 1.6rem;
-}
-
-.template-info p {
-  margin-top: 15px;
-  line-height: 1.6;
-  color: #333;
-}
-
-.template-cta {
-  flex: 1;
-  text-align: right;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .template-card {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .template-cta {
-    text-align: left;
-    margin-top: 20px;
-  }
-}
-
-
-
-template-card {
-  background: white;
-  padding: 40px;
-  border-radius: 16px;
-  margin-bottom: 50px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  transition: 0.3s;
-}
-
-.template-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-}
-
-/* Preview image */
 .template-preview {
   position: relative;
-  flex: 1;
+  flex: 0 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.05);
 }
 
 .template-preview img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  max-width: 80%;
+  padding: 15px;
 }
 
-/* FREE badge */
 .badge {
   position: absolute;
   top: 10px;
-  left: 10px;
-  background: #2ab94b;
-  color: white;
-  padding: 6px 12px;
-  font-size: 0.7rem;
-  border-radius: 20px;
+  right: 10px;
+  background: #cb6ce6;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 1px;
 }
 
-/* Info section */
 .template-info {
-  flex: 2;
+  flex: 1;
+  padding: 20px;
 }
 
 .template-info h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.template-info .tags span {
+  background: rgba(203,108,230,0.2);
+  color: #cb6ce6;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.template-info p {
+  margin: 15px 0;
+  opacity: 0.9;
+}
+
+.template-actions .btn-primary {
+  display: inline-block;
+  background: #cb6ce6;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.template-actions .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(203,108,230,0.3);
+}
+
+.template-actions .microcopy {
+  font-size: 0.75rem;
+  color: #bbb;
+  margin-top: 8px;
+}
+
+/* ===== PAGE HERO ===== */
+.page-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.05);
+  margin: 30px;
+}
+
+.page-hero h2 {
+  color: #cb6ce6;
+  font-size: 2rem;
   margin-bottom: 15px;
-  color: #0d1b2a;
-  font-size: 1.6rem;
 }
 
-.template-actions {
-  margin-top: 20px;
+.page-hero p {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 1.1rem;
 }
 
-.microcopy {
-  margin-top: 10px;
-  font-size: 0.85rem;
-  color: #666;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .template-card {
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px){
+  .templates .template-card {
     flex-direction: column;
-    text-align: left;
+    align-items: center;
   }
 
-  .template-preview img {
-    max-width: 100%;
+  .template-preview {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .template-info {
+    width: 100%;
+  }
+
+  .page-hero {
+    margin: 15px;
   }
 }

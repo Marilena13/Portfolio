@@ -4,83 +4,94 @@
   <meta charset="UTF-8">
   <title>Use Cases | Finance & IT Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="asset/css/style.css">
-<link rel="stylesheet" href="asset/css/usecase.css"></head>
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/css/usecase.css">
+</head>
 <body>
 
   <!-- Navbar -->
   <header class="navbar">
-    <div class="container">
-      <img src="asset/image/logo .png" alt="Logo" class="logo-img"/>
+    <div class="container navbar-container">
+      <img src="asset/image/logoBG.png" alt="Logo" class="logo-img"/>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="use_case.html">Use Cases</a></li>
+          <li><a href="use_case.html" class="active">Use Cases</a></li>
           <li><a href="template.html">Templates</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Page Header -->
+  <!-- Page Hero -->
   <section class="page-hero">
-    <div class="container">
+    <div class="container hero-content">
       <h2>Selected Use Cases</h2>
       <p>Real IT transformation projects</p>
     </div>
   </section>
 
   <!-- Use Case Cards -->
-<section class="usecases">
-    <div class="container">
+  <main>
+    <section class="usecases">
+      <div class="container">
 
-    <div class="usecase-card executive">
+        <div class="usecase-card">
+          <div class="usecase-header">
+            <h3>Finance Process Automation</h3>
+            <div class="tags">
+              <span>ServiceNow</span>
+              <span>Automation</span>
+              <span>Process Optimization</span>
+            </div>
+          </div>
 
-      <div class="usecase-header">
-        <h3>Finance Process Automation</h3>
-        <div class="tags">
-          <span>ServiceNow</span>
-          <span>Automation</span>
-          <span>Process Optimization</span>
+          <div class="usecase-grid">
+            <div class="usecase-content">
+              <div class="block">
+                <h4>Problem</h4>
+                <p>Manual reconciliation processes causing reporting delays and data inconsistencies across departments.</p>
+              </div>
+              <div class="block">
+                <h4>Approach</h4>
+                <p>Stakeholder workshops, process mapping, gap analysis and feasibility assessment for automation.</p>
+              </div>
+              <div class="block">
+                <h4>Solution</h4>
+                <p>Implementation of automated workflows integrated with ServiceNow and structured validation checkpoints.</p>
+              </div>
+            </div>
+
+            <div class="impact-box">
+              <h4>Impact</h4>
+              <ul>
+                <li>-35% processing time</li>
+                <li>Improved reporting accuracy</li>
+                <li>Reduced manual errors</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
       </div>
+    </section>
+  </main>
 
-      <div class="usecase-grid">
-
-        <div class="usecase-content">
-          <div class="block">
-            <h4>Problem</h4>
-            <p>Manual reconciliation processes causing reporting delays and data inconsistencies across departments.</p>
-          </div>
-
-          <div class="block">
-            <h4>Approach</h4>
-            <p>Stakeholder workshops, process mapping, gap analysis and feasibility assessment for automation.</p>
-          </div>
-
-          <div class="block">
-            <h4>Solution</h4>
-            <p>Implementation of automated workflows integrated with ServiceNow and structured validation checkpoints.</p>
-          </div>
-        </div>
-
-        <div class="impact-box">
-          <h4>Impact</h4>
-          <ul>
-            <li>-35% processing time</li>
-            <li>Improved reporting accuracy</li>
-            <li>Reduced manual errors</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
+  <!-- Footer -->
   <footer>
-    <p>© 2026 Marilena Agostino | Finance & IT Portfolio</p>
+    <p>© 2026 Marilena Agostino | IT Portfolio</p>
   </footer>
 
+  <!-- Navbar Scroll Script -->
+  <script>
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector(".navbar");
+      if(window.scrollY > 30){
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
   <meta charset="UTF-8">
-  <title>Templates | Finance & IT Portfolio</title>
+  <title>Templates | IT Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/templates.css">
@@ -10,61 +10,78 @@
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <div class="container">
-      <img src="asset/image/logo .png" alt="Logo" class="logo-img"/>
+    <div class="container navbar-container">
+      <img src="asset/image/logoBG.png" alt="Logo" class="logo-img"/>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="use_case.html">Use Cases</a></li>
-          <li><a href="template.html">Templates</a></li>
+          <li><a href="template.html" class="active">Templates</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <!-- Page Hero -->
   <section class="page-hero">
-    <div class="container">
+    <div class="container hero-content">
       <h2>Executive Toolkit</h2>
-      <p>Structured templates for Finance & IT professionals</p>
+      <p>Structured templates for IT Project </p>
     </div>
   </section>
+
   <!-- Templates Section -->
-  <section class="templates">
-    <div class="container">
-      <div class="template-card">
+  <main>
+    <section class="templates">
+      <div class="container">
+        <div class="template-card">
+          <div class="template-preview">
+            <img src="asset/image/doc.png" alt="BRD Template Preview">
+            <span class="badge">FREE</span>
+          </div>
 
-  <div class="template-preview">
-    <img src="asset/image/doc.png" alt="BRD Template Preview">
-    <span class="badge">FREE</span>
-  </div>
+          <div class="template-info">
+            <h3>Business Requirement Document (BRD)</h3>
 
-  <div class="template-info">
-    <h3>Business Requirement Document (BRD)</h3>
+            <div class="tags">
+              <span>Business Analysis</span>
+              <span>Documentation</span>
+            </div>
 
-    <div class="tags">
-      <span>Business Analysis</span>
-      <span>Documentation</span>
-    </div>
+            <p>
+              Structured template for collecting and organizing functional
+              and technical requirements aligned with stakeholders.
+            </p>
 
-    <p>
-      Structured template for collecting and organizing functional
-      and technical requirements aligned with stakeholders.
-    </p>
+            <div class="template-actions">
+              <a href="asset/pdf/BRD_Template.docx" target="_blank" class="btn-primary">
+                View & Download
+              </a>
+              <p class="microcopy">
+                No email required. Free professional resource.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <div class="template-actions">
-      <a href="asset/pdf/BRD_Template.docx" target="_blank" class="btn-primary">
-        View & Download
-      </a>
-
-      <p class="microcopy">
-        No email required. Free professional resource.
-      </p>
-    </div>
-  </div>
-    </div>
-  </section>
+  <!-- Footer -->
   <footer>
-    <p>© 2026 Marilena Agostino | Finance & IT Portfolio</p>
+    <p>© 2026 Marilena Agostino | IT Portfolio</p>
   </footer>
+
+  <!-- Navbar Scroll Script -->
+  <script>
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector(".navbar");
+      if(window.scrollY > 30){
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
 </body>
 </html>

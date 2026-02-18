@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Finance & IT Portfolio | Marilena Agostino</title>
+  <title>IT Portfolio | Marilena Agostino</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="asset/css/style.css">
 <body>
 
 <header class="navbar">
   <div class="container">
-    <img src="asset/image/logo .png" alt="Logo" class="logo-img"/>
+    <img src="asset/image/logoBG.png" alt="Logo" class="logo-img"/>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -23,10 +23,10 @@
 
 <section class="hero">
   <div class="container hero-content">
-    <h2>Bridging Finance & Technology</h2>
+    <h2>Bridging Business & Technology</h2>
     <p>
-      IT Business Analyst specialized in Finance transformation,
-      process optimization and digital integration.
+      IT Business Analyst specialized in Software Projects development, Finance transformation,
+      Process Optimization and Digital Integration.
     </p>
     <a href="use_case.html" class="btn-primary">Explore Use Cases</a>
   </div>
@@ -51,8 +51,17 @@
   </section>
 
   <footer>
-    <p>© 2026 Marilena Agostino | Finance & IT Portfolio</p>
+    <p>© 2026 Marilena Agostino | IT Portfolio</p>
   </footer>
-
+<script>
+  window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    if(window.scrollY > 30){
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
 </body>
 </html>
