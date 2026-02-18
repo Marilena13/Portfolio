@@ -1,0 +1,161 @@
+.page-hero {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.page-hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Use cases section */
+.usecases {
+  padding: 80px 0;
+  background: #f5f7fa;
+}
+
+.usecase-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.usecase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.usecase-card h3 {
+  margin-bottom: 20px;
+  color: #0d1b2a;
+}
+
+.usecase-card p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.problem {
+  color: #c1121f;
+}
+
+.result {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #1d3557;
+}
+.usecases {
+  padding: 100px 0;
+  background: #f5f7fa;
+}
+
+.usecase-card.executive {
+  background: white;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.usecase-card.executive:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Header */
+.usecase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.usecase-header h3 {
+  font-size: 1.8rem;
+  color: #0d1b2a;
+}
+
+.tags span {
+  background: #e0e7ff;
+  color: #1b263b;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+/* Grid Layout */
+.usecase-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+/* Blocks */
+.block {
+  margin-bottom: 25px;
+}
+
+.block h4 {
+  margin-bottom: 8px;
+  color: #3a86ff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.block p {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Impact Box */
+.impact-box {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.impact-box h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.impact-box ul {
+  list-style: none;
+}
+
+.impact-box li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .usecase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .usecase-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .tags span {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+}
