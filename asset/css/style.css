@@ -231,6 +231,18 @@ footer {
   color: #9c9cb2;
 }
 
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #9c9cb2;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #cb6ce6;
+  box-shadow: 0 0 25px rgba(203,108,230,0.4);
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
