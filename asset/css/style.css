@@ -125,6 +125,12 @@ nav a:hover::after {
   margin-bottom: 50px;
 }
 
+.paragraph {
+  font-size: 0.6rem;
+  color:#d7d7e2;
+  margin: auto;
+}
+
 /* Accent glow  */
 .hero::after {
   content: "";
